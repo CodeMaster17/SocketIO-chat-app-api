@@ -1,0 +1,15 @@
+1. Firstly we c reated the backend of our app - i.e server
+2. We have a plan to send data from our backend to fronetned
+3. Then we install react js
+4. We then installed Chakra Ui
+5. We then installed Brower Router
+6. We then install react-router-dom version 5 for multiple pages
+7. We created two pages - Homepage.js and ChatPage.js
+8. Imported it to App.js
+9 Gave both of them paths as :
+    <Route path='/chats' component={ChatPage} />
+10. we give attribute exact to load only the current page and not all the pages at the same time while giving the the path
+     <Route path='/' component={HomePage} exact />
+There are two pages in the website : 
+    1. Homepage for log in
+    2. Chat Page
