@@ -8,7 +8,7 @@ Feilds that are going to be contained
 */
 
 const mongoose = require('mongoose');
-const chatModel1 = mongoose.Schema({
+const chatModels = mongoose.Schema({
     chatName: { type: String, trim: true },
     isGroupChat: { type: Boolean, default: false },
     users: [{
@@ -29,5 +29,5 @@ const chatModel1 = mongoose.Schema({
     timestamps: true,
 }
 );
-const Chat = mongoose.model("Chat", chatModel);
+const Chat = mongoose.model("Chat", chatModels);
 module.exports = Chat;

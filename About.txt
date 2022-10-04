@@ -21,3 +21,7 @@ There are two pages in the website :
     -for that
         -created ChatModels.js
         -install a package called as mongoose
+
+
+
+cloudinary is used to take input of the pictures.

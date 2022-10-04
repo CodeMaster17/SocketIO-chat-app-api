@@ -4,6 +4,7 @@ const { chats } = require("./data/data");
 const connectDB = require("./config/db");
 const colors = require("colors");
 const userRoutes = require("./routes/userRoutes")
+const chatRoutes = require("./routes/chatRoutes")
 const { notFound, errorHandler } = require("./middleware/errorMiddleware")
 
 
@@ -37,6 +38,7 @@ app.get("/api/chat/:id", (req, res) => {
 */
 
 app.use('/api/user', userRoutes)
+app.use('/api/chat', chatRoutes) //creating another endpoint
 
 // for error handling if thee request goes to some other location
 app.use(notFound)
